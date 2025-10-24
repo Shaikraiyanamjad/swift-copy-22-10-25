@@ -298,3 +298,43 @@
     text-decoration: underline;
   }
 }
+
+/* Default logo styling */
+.header-1 .logo img {
+  max-width: 400px;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+/* Adjust logo on tablet screens */
+@media (max-width: 1024px) {
+  .header-1 .logo img {
+    max-width: 360px;
+  }
+}
+
+/* Adjust logo on smaller screens */
+@media (max-width: 768px) {
+  .header-1 .logo img {
+    max-width: 300px;
+  }
+}
+
+/* On mobile screens, make it smaller and ensure spacing */
+@media (max-width: 576px) {
+  .header-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .header-1 .logo img {
+    max-width: 220px;
+  }
+
+  .header-1 .btn {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+}
