@@ -249,3 +249,52 @@
 }
 
 /*--------------------- Responsive (End) ---------------------*/
+
+
+
+/* Hidden by default */
+.swiftcopy-mobile-topbar {
+  display: none;
+}
+
+/* Mobile only */
+@media (max-width: 767px) {
+  .swiftcopy-mobile-topbar {
+    display: block;
+    background: #0b1220; /* professional dark navy */
+    color: #ffffff;
+    padding: 8px 12px; /* reduced height */
+    text-align: center;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 13px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .swiftcopy-topbar-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .swiftcopy-topbar-inner span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .swiftcopy-topbar-inner i {
+    color: #dc3545; /* subtle gold accent */
+    font-size: 13px;
+  }
+
+  .swiftcopy-topbar-inner a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .swiftcopy-topbar-inner a:hover {
+    text-decoration: underline;
+  }
+}
