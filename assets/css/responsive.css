@@ -249,76 +249,67 @@
 }
 
 /*--------------------- Responsive (End) ---------------------*/
-
-
-
-/* Hidden by default */
-.swiftcopy-mobile-topbar {
-  display: none;
-}
-
-/* Mobile only */
-@media (max-width: 767px) {
-  .swiftcopy-mobile-topbar {
-    display: block;
-    background: #0b1220; /* professional dark navy */
-    color: #ffffff;
-    padding: 8px 12px; /* reduced height */
-    text-align: center;
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    font-size: 13px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  /* Fixed bottom contact bar */
+  .home-fixed-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #150050 ;
+    padding: 10px 0 5px;
+    z-index: 9999;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.3);
   }
 
-  .swiftcopy-topbar-inner {
+  .home-fixed-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+
+  .icon-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4px;
-  }
-
-  .swiftcopy-topbar-inner span {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-
-  .swiftcopy-topbar-inner i {
-    color: #dc3545; /* subtle gold accent */
-    font-size: 13px;
-  }
-
-  .swiftcopy-topbar-inner a {
-    color: #ffffff;
+    color: #fff;
+    font-size: 20px;
     text-decoration: none;
-    font-weight: 500;
+    transition: 0.3s ease;
   }
 
-  .swiftcopy-topbar-inner a:hover {
-    text-decoration: underline;
+  .icon-item i {
+    font-size: 22px;
+    margin-bottom: 5px;
   }
-}
 
-/* Default logo styling */
-.header-1 .logo img {
-  max-width: 400px;
-  height: auto;
-  transition: all 0.3s ease;
-}
-
-/* Adjust logo on tablet screens */
-@media (max-width: 1024px) {
-  .header-1 .logo img {
-    max-width: 360px;
+  .icon-item span {
+    font-size: 13px;
+    color: #ccc;
+    border-top: 1px solid #333;
+    padding-top: 3px;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
   }
-}
 
-/* Adjust logo on smaller screens */
-@media (max-width: 768px) {
-  .header-1 .logo img {
-    max-width: 300px;
+  .icon-item:hover {
+    color: #dc3545;
+    transform: scale(1.1);
   }
-}
+
+  .icon-item:hover span {
+    color: #dc3545;
+  }
+
+  @media (max-width: 600px) {
+    .icon-item i {
+      font-size: 20px;
+    }
+    .icon-item span {
+      font-size: 12px;
+    }
+  }
 
 /* On mobile screens, make it smaller and ensure spacing */
 @media (max-width: 576px) {

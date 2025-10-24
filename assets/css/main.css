@@ -963,7 +963,7 @@ p{
 /*----- 7- Scroll-Top Area CSS -----*/
 .scroll-top{
     position: fixed;
-    bottom: 1rem;
+    bottom: 8rem;
     right: 1rem;
     height: 4.5rem;
     width: 5rem;
