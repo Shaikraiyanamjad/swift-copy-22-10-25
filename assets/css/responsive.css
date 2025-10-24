@@ -249,65 +249,64 @@
 }
 
 /*--------------------- Responsive (End) ---------------------*/
-  /* Fixed bottom contact bar */
+   /* Hide bar by default (for desktop/tablet) */
   .home-fixed-bar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: #150050 ;
-    padding: 10px 0 5px;
-    z-index: 9999;
-    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.3);
+    display: none;
   }
 
-  .home-fixed-icons {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-  }
-
-  .icon-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #fff;
-    font-size: 20px;
-    text-decoration: none;
-    transition: 0.3s ease;
-  }
-
-  .icon-item i {
-    font-size: 22px;
-    margin-bottom: 5px;
-  }
-
-  .icon-item span {
-    font-size: 13px;
-    color: #ccc;
-    border-top: 1px solid #333;
-    padding-top: 3px;
-    width: 100%;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-
-  .icon-item:hover {
-    color: #dc3545;
-    transform: scale(1.1);
-  }
-
-  .icon-item:hover span {
-    color: #dc3545;
-  }
-
-  @media (max-width: 600px) {
-    .icon-item i {
-      font-size: 20px;
+  /* Show only on mobile devices */
+  @media (max-width: 768px) {
+    .home-fixed-bar {
+      display: block;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #150050;
+      padding: 10px 0 5px;
+      z-index: 9999;
+      box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.3);
     }
+
+    .home-fixed-icons {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+    }
+
+    .icon-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #fff;
+      font-size: 20px;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .icon-item i {
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
+
     .icon-item span {
-      font-size: 12px;
+      font-size: 13px;
+      color: #ccc;
+      border-top: 1px solid #333;
+      padding-top: 3px;
+      width: 100%;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .icon-item:hover {
+      color: #dc3545;
+      transform: scale(1.1);
+    }
+
+    .icon-item:hover span {
+      color: #dc3545;
     }
   }
 
